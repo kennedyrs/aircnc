@@ -11,9 +11,13 @@ export default function Dashboard() {
 
     const user_id = localStorage.getItem('user');
 
-    const socket = useMemo(() => socketio('http://127.0.0.1:3333', {
-        query: { user_id },
-    }), [user_id]);
+    const socket = useMemo(
+      () =>
+        socketio("https://kennedyrs-aircnc.herokuapp.com", {
+          query: { user_id },
+        }),
+      [user_id]
+    );
 
     useEffect(() => {
         socket.on('booking_request', data => {
