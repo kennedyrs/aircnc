@@ -16,7 +16,7 @@ const SpotSchema = new mongoose.Schema({
 });
 
 SpotSchema.virtual('thumbnail_url').get(function(){
-    return `http://10.2.3.105:3333/files/${this.thumbnail}`
+    return `https://kennedyrs-aircnc.herokuapp.com/files/${this.thumbnail}`;
 });
 
 module.exports = mongoose.model('Spot', SpotSchema);
