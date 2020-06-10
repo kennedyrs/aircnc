@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const dotenv = require("dotenv");
 const cors = require('cors');
 const path = require('path');
+
+dotenv.config()
 
 const socketio = require('socket.io');
 const http = require('http');
@@ -13,7 +15,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack9-1foqw.mongodb.net/semana09?retryWrites=true&w=majority', {
+mongoose.connect(`${process.env.MONGO_URL}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -36,10 +38,10 @@ app.use((req, res, next) => {
     return next();
 });
 
-app.use(cors());
+app.use(cors({ origin: "https://www.aircnc.kennedyrs.tk/" }));
 app.use(express.json());
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
 
-server.listen(3333);
+server.listen(process.env.PORT || 3333);
 
