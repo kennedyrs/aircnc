@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://10.2.3.105:3333',
+    baseURL: 'https://kennedyrs-aircnc.herokuapp.com/',
 });
 
 export default api;
