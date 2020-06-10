@@ -12,9 +12,9 @@ export default function List() {
  
     useEffect(() => { 
         AsyncStorage.getItem('user').then(user_id => {
-            const socket = socketio('http://127.0.0.1:3333', {
-                query: { user_id }
-            }) 
+            const socket = socketio("https://kennedyrs-aircnc.herokuapp.com", {
+              query: { user_id },
+            }); 
 
             socket.on('booking_response', booking => {
                 Alert.alert(`Sua reserva em ${booking.spot.company} em ${booking.date} foi ${booking.approved ? 'APROVADA' : 'REJEITADA'}`);
