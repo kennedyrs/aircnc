@@ -1,13 +1,12 @@
 {
   "expo": {
     "name": "AirCnC",
-    "slug": "mobile",
+    "slug": "AirCnC",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,7 +23,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "tk.kennedyrs.aircnc",
+      "versionCode": 1
     }
   }
 }

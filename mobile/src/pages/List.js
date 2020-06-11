@@ -45,6 +45,7 @@ export default function List() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        paddingTop: 25,
     },
     logo: {
         height: 32,
