@@ -1,8 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 
 export default function Login({ history }) {
   const [email, setEmail] = useState('');
+
+  useEffect(() => {
+    // A simple Get to wake up the machine at heroku
+    async function getHeroku(){
+      try {
+        console.log('Waiting for heroku... be patient')
+        await api.get('/');
+      } catch(err){
+        console.log('Wake up heroku, time to work')
+      }
+    }
+
+    getHeroku()
+  }, [])
+
 
   async function handleSubmit(event){
     event.preventDefault();

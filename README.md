@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="AirCnC" src="https://drive.google.com/uc?export=view&id=1JzZVPpR1vkz93gD9_Yq52vOMmA_OjmAw" width="240px" />
+    <img alt="AirCnC" src=".github/logo.png" width="240px" />
 </h1>
 
 <h4 align="center">
@@ -16,9 +16,9 @@
 </p>
 
 <p align="center">
-  <a href="#about-project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#project-">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout-">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias-%EF%B8%8F">Tecnologias</a>
 </p>
 
 
@@ -37,17 +37,18 @@ podendo esses spots serem ou não pagos.</p>
 
 ### Versão Web
 <p align="center">
-  <img alt="Frontend" src="https://drive.google.com/uc?export=view&id=1RXR9fF8C11-Cv7OFc8dsZf1rEroQuePS" width="450" height="250">
-  <img alt="Frontend" src="https://drive.google.com/uc?export=view&id=1rnH-GU7GyEJCYA1x5dNE45hXXY3Cvgn-" width="450" height="250">
-  <img alt="Frontend" src="https://drive.google.com/uc?export=view&id=1Fb0hqkGQEUpqKRomrUBeINfexwbXNsQ0" width="450" height="250">
+  <img alt="Frontend" src=".github/web0.jpg" width="45%" height="250" />
+  <img alt="Frontend" src=".github/web1.jpg" width="45%" height="250" />
+</p>
+<p align="center">
+  <img alt="Frontend" src=".github/web2.jpg" width="45%" height="250" />
+  <img alt="Frontend" src=".github/web3.jpg" width="45%" height="250" />
 </p>
 
 
 ### Versão Mobile
 <p align="center">
-  <img alt="Frontend" src="https://drive.google.com/uc?export=view&id=1RXR9fF8C11-Cv7OFc8dsZf1rEroQuePS" width="450" height="250">
-  <img alt="Frontend" src="https://drive.google.com/uc?export=view&id=1rnH-GU7GyEJCYA1x5dNE45hXXY3Cvgn-" width="450" height="250">
-  <img alt="Frontend" src="https://drive.google.com/uc?export=view&id=1Fb0hqkGQEUpqKRomrUBeINfexwbXNsQ0" width="450" height="250">
+  <img style="border-radius: 35px" alt="Frontend" src=".github/mobile-app.gif" heigth="100%" />
 </p>
 
 ## Tecnologias ⚙️
@@ -58,4 +59,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
+- [Mongo](https://www.mongodb.com/)
 - [Socket.IO](https://socket.io/)
