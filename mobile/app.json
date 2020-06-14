@@ -27,7 +27,7 @@
     },
     "android": {
       "package": "tk.kennedyrs.aircnc",
-      "versionCode": 1
+      "versionCode": 2
     }
   }
 }
